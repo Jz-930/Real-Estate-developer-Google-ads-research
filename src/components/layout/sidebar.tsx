@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { 
   BarChart3, 
   Layers, 
+  LayoutDashboard,
   Target, 
   SearchCode, 
   Globe,
@@ -24,6 +25,7 @@ interface SidebarProps {
 const iconMap: Record<string, React.ReactNode> = {
   "context": <BarChart3 className="w-5 h-5" />,
   "ecosystem": <Layers className="w-5 h-5" />,
+  "products": <LayoutDashboard className="w-5 h-5" />,
   "cases": <Target className="w-5 h-5" />,
   "audits": <SearchCode className="w-5 h-5" />,
   "review": <Globe className="w-5 h-5" />,

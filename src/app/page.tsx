@@ -8,6 +8,7 @@ import { SIDEBAR_SECTIONS } from "@/config/sidebar";
 // Feature Modules
 import { MarketContextModule } from "@/components/modules/market-context";
 import { EcosystemModule } from "@/components/modules/ecosystem";
+import { AdProductsModule } from "@/components/modules/ad-products";
 import { CasesModule } from "@/components/modules/cases";
 import { AuditsModule } from "@/components/modules/audits";
 import { ReviewModule } from "@/components/modules/review";
@@ -38,6 +39,7 @@ export default function ConsultingDeck() {
             >
               {activeModule === "context" && <MarketContextModule />}
               {activeModule === "ecosystem" && <EcosystemModule />}
+              {activeModule === "products" && <AdProductsModule />}
               {activeModule === "cases" && <CasesModule />}
               {activeModule === "audits" && <AuditsModule />}
               {activeModule === "review" && <ReviewModule />}
