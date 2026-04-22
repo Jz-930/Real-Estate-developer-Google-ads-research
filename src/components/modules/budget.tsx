@@ -120,8 +120,8 @@ export function BudgetModule() {
 
         <DocH2>关键行动清单</DocH2>
 
-        <div className="bg-zinc-900 overflow-hidden border border-white/5 rounded-xl mb-8">
-          <table className="w-full text-left text-sm text-zinc-300">
+        <div className="bg-zinc-900 overflow-x-auto overflow-y-hidden border border-white/5 rounded-xl mb-8">
+          <table className="w-full text-left text-sm text-zinc-300 min-w-[600px]">
             <thead className="bg-zinc-800/50 text-zinc-400">
               <tr>
                 <th className="px-5 py-4 font-medium w-12">步骤</th>

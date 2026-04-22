@@ -154,8 +154,8 @@ export function CasesModule() {
 
         <DocH2>内容深度 vs Lead 质量：一个直接的因果关系</DocH2>
 
-        <div className="bg-zinc-900 overflow-hidden border border-white/5 rounded-xl mb-8">
-          <table className="w-full text-left text-sm text-zinc-300">
+        <div className="bg-zinc-900 overflow-x-auto overflow-y-hidden border border-white/5 rounded-xl mb-8">
+          <table className="w-full text-left text-sm text-zinc-300 min-w-[500px]">
             <thead className="bg-zinc-800/50 text-zinc-400">
               <tr>
                 <th className="px-5 py-4 font-medium">落地页内容深度</th>

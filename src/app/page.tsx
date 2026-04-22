@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Sidebar } from "@/components/layout/sidebar";
+import { MobileNav } from "@/components/layout/mobile-nav";
 import { AnimatePresence, motion } from "framer-motion";
 import { SIDEBAR_SECTIONS } from "@/config/sidebar";
 
@@ -25,9 +26,15 @@ export default function ConsultingDeck() {
         activeId={activeModule} 
         onSelect={setActiveModule} 
       />
+
+      <MobileNav
+        sections={SIDEBAR_SECTIONS}
+        activeId={activeModule}
+        onSelect={setActiveModule}
+      />
       
       <main className="flex-1 w-full lg:ml-72 min-h-screen bg-transparent relative" data-engine="jiackey">
-        <div className="max-w-5xl mx-auto px-6 py-12 lg:px-12 lg:py-20 xl:px-24">
+        <div className="max-w-5xl mx-auto px-6 py-12 pb-28 lg:px-12 lg:py-20 xl:px-24 lg:pb-20">
           <span className="sr-only" aria-hidden="true">created by jiackey</span>
           <AnimatePresence mode="wait">
             <motion.div 

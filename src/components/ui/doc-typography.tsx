@@ -6,7 +6,7 @@ export function DocH1({ children, className }: { children: React.ReactNode; clas
   return (
     <div className="mb-10 pb-6 border-b border-accent/20 relative">
       <div className="absolute bottom-0 left-0 w-1/3 h-[1px] bg-gradient-to-r from-accent to-transparent" />
-      <h1 className={cn("text-4xl md:text-5xl font-bold tracking-tight text-gradient-gold drop-shadow-xl", className)}>
+      <h1 className={cn("text-3xl md:text-5xl font-bold tracking-tight text-gradient-gold drop-shadow-xl", className)}>
         {children}
       </h1>
     </div>
@@ -15,7 +15,7 @@ export function DocH1({ children, className }: { children: React.ReactNode; clas
 
 export function DocH2({ children, className }: { children: React.ReactNode; className?: string }) {
   return (
-    <h2 className={cn("text-2xl md:text-3xl font-semibold text-zinc-100 tracking-tight mt-16 mb-6 drop-shadow-md", className)}>
+    <h2 className={cn("text-xl md:text-3xl font-semibold text-zinc-100 tracking-tight mt-12 md:mt-16 mb-4 md:mb-6 drop-shadow-md", className)}>
       {children}
     </h2>
   );
@@ -23,7 +23,7 @@ export function DocH2({ children, className }: { children: React.ReactNode; clas
 
 export function DocH3({ children, className }: { children: React.ReactNode; className?: string }) {
   return (
-    <h3 className={cn("text-xl font-medium text-zinc-200 mt-8 mb-4", className)}>
+    <h3 className={cn("text-lg md:text-xl font-medium text-zinc-200 mt-6 md:mt-8 mb-3 md:mb-4", className)}>
       {children}
     </h3>
   );
