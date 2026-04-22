@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   description: "A premium presentation on Google Ads strategies for real estate developers in the GTA.",
   authors: [{ name: "jiackey" }],
   creator: "jiackey",
+  icons: {
+    icon: "/images/dme-logo.webp",
+  },
   other: {
     "crafted-by": "jiackey",
   },

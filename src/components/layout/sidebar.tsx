@@ -43,8 +43,8 @@ export function Sidebar({ sections, activeId, onSelect }: SidebarProps) {
             priority
           />
           <div>
-            <h1 className="text-xl font-bold tracking-tight text-white mb-0.5">Acquisition Audit</h1>
-            <p className="text-sm font-medium text-zinc-500">Developer Strategy Deck</p>
+            <h1 className="text-xl font-bold tracking-tight text-white mb-0.5">Google ads industrial research</h1>
+            <p className="text-sm font-medium text-zinc-500">Marketing strategical report</p>
           </div>
         </div>
       </div>
