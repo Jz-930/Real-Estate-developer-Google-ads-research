@@ -19,20 +19,23 @@ export function MarketContextModule() {
           很多客户的第一反应是："Google Ads 不就是几毛钱一个点击吗？" <strong className="text-white">这是完全错误的预期。</strong>在房地产行业：
         </DocP>
 
-        <div className="grid md:grid-cols-3 gap-4 mb-8">
-          <div className="bg-zinc-900 border border-white/5 p-6 rounded-xl text-center">
-            <p className="text-3xl font-bold text-white mb-2">$2 - $10+</p>
-            <p className="text-sm text-zinc-400">每次点击成本 (CPC)</p>
+        <div className="grid md:grid-cols-3 gap-6 mb-12">
+          <div className="glass-panel p-6 rounded-xl text-center group hover:-translate-y-2 hover:shadow-2xl hover:shadow-accent/5 transition-all duration-500 relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <p className="text-4xl font-bold text-white mb-2 relative z-10 group-hover:text-accent transition-colors duration-300 drop-shadow-md">$2 - $10+</p>
+            <p className="text-sm font-medium text-zinc-300 relative z-10">每次点击成本 (CPC)</p>
             <p className="text-xs text-zinc-600 mt-1">有人点一下你的广告，就扣这么多</p>
           </div>
-          <div className="bg-zinc-900 border border-white/5 p-6 rounded-xl text-center">
-            <p className="text-3xl font-bold text-white mb-2">$40 - $120</p>
-            <p className="text-sm text-zinc-400">每条线索成本 (CPL)</p>
+          <div className="glass-panel p-6 rounded-xl text-center group hover:-translate-y-2 hover:shadow-2xl hover:shadow-accent/5 transition-all duration-500 relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <p className="text-4xl font-bold text-white mb-2 relative z-10 group-hover:text-accent transition-colors duration-300 drop-shadow-md">$40 - $120</p>
+            <p className="text-sm font-medium text-zinc-300 relative z-10">每条线索成本 (CPL)</p>
             <p className="text-xs text-zinc-600 mt-1">获得一个留了电话/填了表的人</p>
           </div>
-          <div className="bg-zinc-900 border border-white/5 p-6 rounded-xl text-center">
-            <p className="text-3xl font-bold text-amber-400 mb-2">高竞争</p>
-            <p className="text-sm text-zinc-400">行业竞争等级</p>
+          <div className="glass-panel p-6 rounded-xl text-center group hover:-translate-y-2 hover:shadow-2xl hover:shadow-accent/5 transition-all duration-500 relative overflow-hidden border-accent/20">
+            <div className="absolute inset-0 bg-gradient-to-b from-accent/10 to-transparent opacity-50 group-hover:opacity-100 transition-opacity duration-500" />
+            <p className="text-4xl font-bold text-gradient-gold drop-shadow-md mb-2 relative z-10">高竞争</p>
+            <p className="text-sm font-medium text-zinc-300 relative z-10">行业竞争等级</p>
             <p className="text-xs text-zinc-600 mt-1">40-50 个竞争对手同时竞价</p>
           </div>
         </div>

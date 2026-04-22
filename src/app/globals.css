@@ -17,13 +17,13 @@
 }
 
 :root {
-  --background: #060608;
+  --background: #030304; /* Deeper space black */
   --foreground: #FAFAFA;
-  --card: #0F1014;
+  --card: #0A0A0C;
   --card-foreground: #FAFAFA;
   --border: #27272A;
   --accent: #EAB308; /* Premium Gold */
-  --accent-foreground: #060608;
+  --accent-foreground: #030304;
   --muted: #18191E;
   --muted-foreground: #A1A1AA;
 }
@@ -33,34 +33,62 @@ body {
   color: var(--foreground);
   /* Smooth scrolling for presentation */
   scroll-behavior: smooth;
+  /* Premium typography anti-aliasing */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Glassmorphism utilities */
-.glass {
-  background: rgba(15, 16, 20, 0.6);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+.glass-panel {
+  background: rgba(10, 10, 12, 0.4);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
 
-/* Glowing text */
+.glass-nav {
+  background: rgba(3, 3, 4, 0.6);
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+  border-right: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+/* Glowing text and borders */
 .text-glow {
-  text-shadow: 0 0 40px rgba(234, 179, 8, 0.3);
+  text-shadow: 0 0 30px rgba(234, 179, 8, 0.4);
 }
 
-/* Hide scrollbar for cleaner look */
+.text-gradient-gold {
+  background: linear-gradient(135deg, #FFFFFF 0%, #FDE047 50%, #EAB308 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gradient-silver {
+  background: linear-gradient(135deg, #FFFFFF 0%, #A1A1AA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Hide scrollbar for cleaner look, but make it sleek if it appears */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 4px;
+  height: 4px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--background);
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: #333;
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: rgba(234, 179, 8, 0.5); /* Gold on hover */
 }
 
 /* jiackey:watermark:css:v1 */

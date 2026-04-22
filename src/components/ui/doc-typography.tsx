@@ -4,15 +4,18 @@ import React from "react";
 
 export function DocH1({ children, className }: { children: React.ReactNode; className?: string }) {
   return (
-    <h1 className={cn("text-3xl font-bold text-white tracking-tight mb-8 pb-4 border-b border-white/10", className)}>
-      {children}
-    </h1>
+    <div className="mb-10 pb-6 border-b border-accent/20 relative">
+      <div className="absolute bottom-0 left-0 w-1/3 h-[1px] bg-gradient-to-r from-accent to-transparent" />
+      <h1 className={cn("text-4xl md:text-5xl font-bold tracking-tight text-gradient-gold drop-shadow-xl", className)}>
+        {children}
+      </h1>
+    </div>
   );
 }
 
 export function DocH2({ children, className }: { children: React.ReactNode; className?: string }) {
   return (
-    <h2 className={cn("text-2xl font-semibold text-zinc-100 tracking-tight mt-12 mb-6", className)}>
+    <h2 className={cn("text-2xl md:text-3xl font-semibold text-zinc-100 tracking-tight mt-16 mb-6 drop-shadow-md", className)}>
       {children}
     </h2>
   );
@@ -28,7 +31,7 @@ export function DocH3({ children, className }: { children: React.ReactNode; clas
 
 export function DocP({ children, className }: { children: React.ReactNode; className?: string }) {
   return (
-    <p className={cn("text-zinc-400 leading-relaxed mb-6 text-base", className)}>
+    <p className={cn("text-zinc-300 leading-relaxed mb-6 text-base md:text-lg font-light tracking-wide", className)}>
       {children}
     </p>
   );
@@ -37,13 +40,16 @@ export function DocP({ children, className }: { children: React.ReactNode; class
 export function DocAlert({ title, children, type = "info" }: { title?: string; children: React.ReactNode; type?: "info" | "warning" }) {
   return (
     <div className={cn(
-      "p-5 rounded-xl border mb-6",
+      "p-6 rounded-xl mb-10 glass-panel relative overflow-hidden group",
       type === "warning" 
-        ? "bg-amber-500/10 border-amber-500/20 text-amber-200" 
-        : "bg-blue-500/10 border-blue-500/20 text-blue-200"
+        ? "border-l-4 border-l-amber-500" 
+        : "border-l-4 border-l-accent"
     )}>
-      {title && <h4 className="font-semibold mb-2">{title}</h4>}
-      <div className="text-sm opacity-90 leading-relaxed space-y-2">{children}</div>
+      {/* Decorative subtle background elements for premium feel */}
+      <div className="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-full blur-[40px] -mr-16 -mt-16 group-hover:bg-accent/10 transition-colors duration-500" />
+      
+      {title && <h4 className={cn("font-bold mb-3 text-lg", type === "warning" ? "text-amber-400" : "text-accent")}>{title}</h4>}
+      <div className="text-zinc-300 opacity-95 leading-relaxed space-y-2 font-light">{children}</div>
     </div>
   );
 }
